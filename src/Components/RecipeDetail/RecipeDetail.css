@@ -1,0 +1,68 @@
+.recipeDetail {
+}
+
+.recipeDetail img {
+  box-shadow: 3px 3px 20px 5px #313131;
+  border-radius: 10px;
+}
+
+.recipeDetail .mealTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #161616;
+}
+
+.recipeDetail .mealCategory {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #e24538;
+  background-color: #e24538;
+  padding: 5px 30px;
+  transition: 0.5s;
+}
+
+.recipeDetail .mealCategory:hover {
+  background-color: #fff;
+  color: #e24538;
+}
+
+.recipeDetail .recipeDatas .recipeTitle,
+.recipeDetail .instructions .instructionTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #313131;
+}
+
+.recipeDetail .recipeDatas .recipeData {
+  font-size: 18px;
+  color: #161616;
+  font-weight: 600;
+}
+.recipeDetail .recipeDatas .recipeData span {
+  background-color: #fff;
+  padding: 1px 6px;
+  font-weight: 700;
+  color: #e24538;
+}
+
+.recipeDetail .instructions {
+}
+
+.recipeDetail .instructions .instructionTitle {
+}
+
+.recipeDetail .instructions .instructionData {
+  font-size: 16px;
+  color: #161616;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+}

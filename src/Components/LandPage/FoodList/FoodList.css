@@ -1,0 +1,77 @@
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+.mealsContainer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mealsContainer .singleMeal {
+  position: relative;
+  padding: 0 10px;
+  margin-right: 40px;
+}
+
+.mealsContainer .singleMeal img {
+  width: 10rem;
+  height: auto;
+  z-index: 1;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.mealsContainer .singleMeal:hover img {
+  transform: scale(1.5);
+}
+
+.mealsContainer .singleMeal .singleMealTexts {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  padding-top: 8rem;
+  margin-top: -4.5rem;
+  color: #161616;
+}
+
+.mealsContainer .mealTitle {
+  font-size: 24px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.mealsContainer .mealCategory {
+  color: #e24538;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .landPageContent .mainTitle {
+    text-align: center;
+  }
+  .landPageContent .underMainTitle {
+    text-align: center;
+  }
+  .mealsContainer .singleMeal {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .landPageContent {
+    min-height: 35vh;
+  }
+  .landPageContent .underMainTitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+}

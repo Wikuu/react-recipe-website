@@ -1,0 +1,87 @@
+.landPageContent {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.landPageContent .mainTitle {
+  font-size: 5rem;
+  color: #161616;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.landPageContent .mainTitle span {
+  color: #e24538;
+}
+.landPageContent .underMainTitle {
+  font-size: 1.4rem;
+  color: #161616;
+}
+
+.landPageContent img {
+  position: absolute;
+  width: 35rem;
+  height: auto;
+  border-radius: 50%;
+  top: 0;
+  right: -7rem;
+  z-index: -1;
+  animation: zoom-in-out 10s infinite both;
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landPageContent {
+    text-align: start;
+    min-height: 35vh;
+  }
+  .landPageContent img {
+    display: none;
+  }
+  .landPageContent .mainTitle {
+    font-size: 3rem;
+  }
+  .landPageContent .underMainTitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .landPageContent .mainTitle {
+    font-size: 4rem;
+  }
+  .landPageContent .underMainTitle {
+    font-size: 1.4rem;
+  }
+  .landPageContent {
+    min-height: 45vh;
+  }
+  .landPageContent img {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .landPageContent {
+    min-height: 55vh;
+  }
+  .landPageContent img {
+    width: 25rem;
+  }
+}
